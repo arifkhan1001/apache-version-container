@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Apache Web Server</title>
+    <script>
+        // Function to get current date and time and display it
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString(); // Format the date and time
+            document.getElementById('dateTime').innerHTML = dateTimeString;
+        }
+
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Apache Web Server!</h1>
+    <p>Your Apache server is up and running.</p>
+    <p>Current Date and Time: <span id="dateTime"></span></p>
+</body>
+</html>
+
